@@ -1,0 +1,65 @@
+{
+  "name": "IDMC",
+  "title": "Internal Displacement Monitoring Centre",
+  "type": "cookbook",
+  "columns": [
+    "#affected",
+    "#date+year",
+    "#hazard+v_idmchazards",
+    "#hazard+v_idmcsubhazards",
+	"#date+start"
+  ],
+  "recipes": [
+    {
+      "name": "Displaced by Year",
+      "title": "Displaced by Year",
+      "description": "Bar chart showing displaced by year",
+      "type": "chart",
+      "ingredients": {
+        "aggregateFunctions": [
+          "sum"
+        ],
+        "aggregateColumns": [
+          "#date+year"
+        ],
+        "valueColumns": [
+          "#affected+displaced+new"
+        ]
+      }
+    },
+    {
+      "name": "Displaced by Hazard",
+      "title": "Displaced by Hazard",
+      "description": "Chart showing displaced by hazard",
+      "type": "chart",
+      "ingredients": {
+        "aggregateFunctions": [
+          "sum"
+        ],
+        "aggregateColumns": [
+          "#hazard+v_idmcsubhazards"
+        ],
+        "valueColumns": [
+          "#affected+displaced+new"
+        ]
+      }
+    },
+    {
+      "name": "Displaced by Hazard",
+      "title": "Displaced by Hazard",
+      "description": "Chart showing displaced by hazard",
+      "type": "chart",
+      "ingredients": {
+        "aggregateFunctions": [
+          "distinct-count"
+        ],
+        "aggregateColumns": [
+          "#hazard+v_idmcsubhazards"
+        ],
+        "valueColumns": [
+          "#hazard+v_idmcsubhazards"
+        ]
+      }
+    },
+  ]
+}
