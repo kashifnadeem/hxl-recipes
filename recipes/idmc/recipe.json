@@ -4,7 +4,7 @@
   "type": "cookbook",
   "columns": [
     "#affected",
-    "#date+year",
+    "#year",
     "#hazard+v_idmchazards",
     "#hazard+v_idmcsubhazards",
 	"#date+start"
@@ -20,7 +20,7 @@
           "sum"
         ],
         "aggregateColumns": [
-          "#date+year"
+          "#year"
         ],
         "valueColumns": [
           "#affected+displaced+new"
