@@ -16,7 +16,7 @@
       "name": "Displaced by Quarter",
       "title": "Displaced by Quarter",
       "description": "Bar chart showing displaced by Quarter",
-      "type": "chart",
+      "type": "timeseries",
       "ingredients": {
         "aggregateFunctions": [
           "sum"
