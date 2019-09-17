@@ -42,7 +42,7 @@
           "#date+return"
         ],
         "valueColumns": [
-          "#affected+returnees+hh",
+          "#affected+returnees+hh"
         ]
       }
     },
