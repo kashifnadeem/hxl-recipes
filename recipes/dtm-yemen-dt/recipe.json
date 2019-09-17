@@ -33,7 +33,7 @@
       "name": "Return by Month",
       "title": "Return by Month",
       "description": "Chart showing return by Month",
-      "type": "chart",
+      "type": "timeseries",
       "ingredients": {
         "aggregateFunctions": [
           "sum"
