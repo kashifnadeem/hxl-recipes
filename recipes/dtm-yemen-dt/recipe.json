@@ -6,7 +6,7 @@
     "#affected+idps+hh",
 	"#affected+returnees+hh",
 	"#adm1+name",
-	"#date+quarter",
+	"#quarter",
 	"#date+return",
 	"#adm1+name"
 
@@ -22,7 +22,7 @@
           "sum"
         ],
         "aggregateColumns": [
-          "#date+quarter"
+          "#quarter"
         ],
         "valueColumns": [
           "#affected+idps+hh"
